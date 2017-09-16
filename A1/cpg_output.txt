@@ -1,0 +1,2 @@
+CpG Island	6..1198	size=1193
+numislands	1

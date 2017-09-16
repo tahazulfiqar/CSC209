@@ -1,0 +1,4 @@
+cut -d"," -f1-2 ca-500.csv | tail -n+2 | sort -t"," -k2 -k1 > q1_addresses_sorted
+grep -o '\<Calgary\>' ca-500.csv | wc -l > q1_calgary
+cut -d"," -f5 ca-500.csv | tail -n+2 | sort | uniq | wc -l > q1_different_cities_count
+cut -d"," -f5-6 ca-500.csv | tail -n+2 | sort | uniq > q1_cities_provinces

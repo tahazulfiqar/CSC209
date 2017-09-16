@@ -1,0 +1,5 @@
+grep -cw "1" A B
+sort -n A | head -1 ; sort -n A | tail -1
+sort -n B | head -1 ; sort -n B | tail -1
+sort -n A B | uniq > UNION
+sort -n A B | uniq -d > INTERSECTION
